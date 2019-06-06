@@ -1,0 +1,21 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     efn.unc.edu.ar. root.efn.unc.edu.ar. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      efn.unc.edu.ar.
+@       IN      A       192.168.1.11
+www     IN      A       192.168.1.11
+frame   IN      CNAME   efn.unc.edu.ar.
+
+@       IN      NS      efn.unc.edu.ar.
+@       IN      A       192.168.1.12
+www     IN      A       192.168.1.12
+frames   IN      CNAME   efn.unc.edu.ar.
+
